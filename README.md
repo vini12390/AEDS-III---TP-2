@@ -1,7 +1,7 @@
 Integrantes: Vinícius Figueiredo e Arthur Crossy
 Descrição Geral
 Esta aplicação tem como objetivo registrar dados em um arquivo externo, armazenando informações como nome, data de criação, data de conclusão, status e prioridade de cada registro. Os dados são persistidos em um formato estruturado para facilitar a leitura e análise posterior.
-Ademais foram acrescidos: O envolvimento e a criação e manipulação de entidades de tarefas e categorias, utilizando técnicas avançadas de estrutura de dados, como a Árvore B+ para implementar índices e relacionamentos.
+Também foram acrescidos: O envolvimento e a criação e manipulação de entidades de tarefas e categorias, utilizando técnicas avançadas de estrutura de dados, como a Árvore B+ para implementar índices e relacionamentos.
 
 Funcionalidades
 Criação de registros: Permite adicionar novos registros ao sistema, definindo os atributos nome, data de criação, status e prioridade. A data de conclusão é inicializada como nula e pode ser atualizada posteriormente.
@@ -60,3 +60,18 @@ além disso, são implementados também as interfaces novas:
 RegistroArvoreBMais
 
 interface que possui os métodos de serialização em array de bytes, compareTo, clone, e size, que são utilizados nos registros com a árvore b+.
+
+As operações mais difíceis foram para criar o menu, foram as que exigiram mais "trabalho", porque elas exploram a ideia de relacionamento. Também as que manipulam as categorias e as tarefas, pelo mesmo motivo.
+
+Para concluir, vocês devem, necessariamente, responder ao seguinte checklist (copie as perguntas abaixo para o seu relatório e responda sim/não em frente a elas):
+
+O CRUD (com índice direto) de categorias foi implementado? Sim
+Há um índice indireto de nomes para as categorias? Não
+O atributo de ID de categoria, como chave estrangeira, foi criado na classe Tarefa? Sim
+Há uma árvore B+ que registre o relacionamento 1:N entre tarefas e categorias? Sim
+É possível listar as tarefas de uma categoria? Sim
+A remoção de categorias checa se há alguma tarefa vinculada a ela? Sim
+A inclusão da categoria em uma tarefa se limita às categorias existentes? Sim
+O trabalho está funcionando corretamente? Sim
+O trabalho está completo? Sim
+O trabalho é original e não a cópia de um trabalho de outro grupo? Sim
